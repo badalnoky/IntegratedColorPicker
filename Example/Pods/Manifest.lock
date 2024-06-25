@@ -1,0 +1,16 @@
+PODS:
+  - IntegratedColorPicker (0.1.0)
+
+DEPENDENCIES:
+  - IntegratedColorPicker (from `../`)
+
+EXTERNAL SOURCES:
+  IntegratedColorPicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IntegratedColorPicker: c8c454f8ce95a71bb164aafed01ad21751cb5e56
+
+PODFILE CHECKSUM: 91bb1dbcdfdf989b49a65a6a188fbe6dc00793c6
+
+COCOAPODS: 1.15.2
