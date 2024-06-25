@@ -1,42 +1,24 @@
-#
-# Be sure to run `pod lib lint IntegratedColorPicker.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'IntegratedColorPicker'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of IntegratedColorPicker.'
+  s.version          = '1.0.0'
+  s.summary          = 'A color picker that shows example content above'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  'A color picker that shows example content above'
                        DESC
 
   s.homepage         = 'https://github.com/badalnoky/IntegratedColorPicker'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'badalnoky' => 'dalnoky.bertalan.andras@gmail.com' }
   s.source           = { :git => 'https://github.com/badalnoky/IntegratedColorPicker.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '17.0'
 
   s.source_files = 'IntegratedColorPicker/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'IntegratedColorPicker' => ['IntegratedColorPicker/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.swift_version = '5.0'
+  s.platforms = {
+    "ios": "17.0"
+  }
+}
 end
