@@ -20,5 +20,4 @@ Pod::Spec.new do |s|
   s.platforms = {
     "ios": "17.0"
   }
-}
 end
