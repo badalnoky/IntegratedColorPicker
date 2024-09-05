@@ -21,6 +21,7 @@ extension CGFloat {
     static let colorSliderHeight: CGFloat = 36
     static let colorValueTextfieldWidth: CGFloat = 56
     static let hexCodeTextfieldWidth: CGFloat = 90
+    static let iPadSheetHeight: CGFloat = 600
 }
 
 extension Color {
@@ -244,4 +245,14 @@ extension AngularGradient {
         gradient: Gradient(colors: [Color.red, Color.purple, Color.blue, Color.teal, Color.green, Color.yellow, Color.orange, Color.red]),
         center: .center
     )
+}
+
+extension UIScreen {
+    static var isPhone: Bool {
+        UIScreen.main.traitCollection.userInterfaceIdiom != .pad
+    }
+
+    static var isPad: Bool {
+        UIScreen.main.traitCollection.userInterfaceIdiom == .pad
+    }
 }
