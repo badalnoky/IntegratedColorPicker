@@ -51,8 +51,9 @@ extension IntegratedColorPicker: View {
                     case .grid: ColorGrid(selectedColor: selectedColor)
                     case .sliders: ColorSlider(selectedColor: selectedColor)
                     }
+                    Spacer()
                 }
-                .frame(maxHeight: .infinity, alignment: .top)
+                .frame(minWidth: UIScreen.isPhone ? .zero : .iPadSheetWidth)
                 .padding(.colorPickerHorizontalPadding)
                 .presentationDetents(UIScreen.isPhone ? [.fraction(.colorPickerDetent)] : [.height(.iPadSheetHeight)])
             }

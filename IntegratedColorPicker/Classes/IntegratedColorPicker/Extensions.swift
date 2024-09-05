@@ -21,6 +21,7 @@ extension CGFloat {
     static let colorSliderHeight: CGFloat = 36
     static let colorValueTextfieldWidth: CGFloat = 56
     static let hexCodeTextfieldWidth: CGFloat = 90
+    static let iPadSheetWidth: CGFloat = 400
     static let iPadSheetHeight: CGFloat = 600
 }
 
