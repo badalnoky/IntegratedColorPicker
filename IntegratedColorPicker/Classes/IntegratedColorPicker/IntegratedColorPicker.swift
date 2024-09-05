@@ -54,6 +54,7 @@ extension IntegratedColorPicker: View {
                     Spacer()
                 }
                 .frame(minWidth: UIScreen.isPhone ? .zero : .iPadSheetWidth)
+                .frame(minHeight: UIScreen.isPhone ? .zero : .iPadSheetHeight)
                 .padding(.colorPickerHorizontalPadding)
                 .presentationDetents(UIScreen.isPhone ? [.fraction(.colorPickerDetent)] : [.height(.iPadSheetHeight)])
             }
