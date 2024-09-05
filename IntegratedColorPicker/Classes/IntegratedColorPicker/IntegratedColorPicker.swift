@@ -39,6 +39,7 @@ extension IntegratedColorPicker: View {
             }
             .sheet(isPresented: $isActive, onDismiss: { activeTab = .grid }) {
                 VStack {
+                    Spacer()
                     previewContent()
                     Picker(String.colorPickerTitle, selection: $activeTab) {
                         ForEach(ColorPickerTab.allCases, id: \.self) { tab in
